@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(0, 100%, 74%);
+    background-image: url('./images/bg-intro-desktop.png');
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 40px;
+    gap: 50px;
+    font-size: 13px;
+}
+
+.titulo {
+    width: 35vw;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.contenedor-form {
+    width: 40vw;
+    flex-direction: column;
+    height: 420px; 
+}
+
+form {
+    background-color: white;
+    width: 33vw;
+    height: 85%;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 4px 4px 10px rgb(90, 89, 89);
+}
+
+.contenedor-form > p {
+    width: 33vw;
+    height: 12%;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom:  10px;
+    text-align: center;
+    font-size: 13px;
+    box-shadow: 2px 2px 5px rgb(90, 89, 89);
+}
+
+input{
+    width: 97%;
+    height: 42px;
+    margin: 5px 9px;
+    margin-bottom: 11px;
+    padding: 20px;
+    border-radius: 5px;
+    border: thin solid rgba(186, 185, 185, 0.3);
+    outline: none;
+    font-weight: bold;
+}
+
+.form-grupo-input {
+    position: relative;
+}
+
+input:focus {
+    border: 1px solid hsl(248, 32%, 49%);
+    outline: none;
+}
+
+button {
+    width: 97%;
+    height: 45px;
+    margin: 12px 9px 9px 9px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    color: white;
+}
+
+form p {
+    text-align: center;
+    font-size: 9px;
+    margin-top: 2px;
+    color: #5e5e5e;
+}
+
+a {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.mensaje-error {
+    color: red;
+    font-size: 9px;
+    margin-bottom: 0;
+    position: absolute;
+    left: 55%;
+    top: 48px;
+    display: none; 
+}
+
+.mensaje-error-activo {
+    display: block;
+}
+
+.input-error-activo {
+    border: 2px solid red;
+}
+
+.icon-error {
+    position: absolute;
+    left: 91%;
+    top: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.icon-error-activo {
+    opacity: 100;
+}
+
+@media (min-width: 375px) and (max-width: 1023px) {
+    body {
+        flex-direction: column;
+        width: 100vw;
+    }
+    .titulo {
+        width: 80vw;
+        text-align: center;
+    }
+    h1 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 6px;
+    }
+    .contenedor-form {
+        width: 95vw; 
+    }
+    .contenedor-form > p {
+        width: 95vw;
+        height: 15%;
+        font-size: 14px;
+    }
+    form {
+        width: 95vw;
+    }
+    input{
+        width: 97%;
+    }
+    
+    button {
+        width: 97%;
+    }
+}

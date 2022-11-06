@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+        <div class="titulo">
+            <h1>Aprende a programar observando a los demás</h1>
+            <p>
+                Vea cómo los desarrolladores experimentados resuelven los problemas en tiempo real. Ver tutoriales con scripts es Genial, pero entender cómo piensan los desarrolladores en invaluable.
+            </p>
+        </div>
+        <div class="contenedor-form">
+            <p> <strong>Pruébalo gratis 7 días</strong> y luego $20 / mes a partir de entonces.</p>
+                <form action="" id="formulario">
+                    <div class="form-grupo-input">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                        <img class="icon-error" id="icono-nombre" src="images/icon-error.svg" alt="">
+                        <p id="mensaje-nombre" class="mensaje-error">*Campo de nombre no puede estar vacío</p>
+                    </div>
+                    <div class="form-grupo-input">
+                        <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+                        <img  class="icon-error" id="icono-apellido" src="images/icon-error.svg" alt="">
+                        <p id="mensaje-apellido" class="mensaje-error">*Campo de apellido no puede estar vacío</p>
+                    </div>
+                    <div class="form-grupo-input">
+                        <input type="email" id="email" name="email" placeholder="Dirección de correo electrónico">
+                        <img  class="icon-error" id="icono-email" src="images/icon-error.svg" alt="">
+                        <p id="mensaje-email" class="mensaje-error">*Campo de correo electrónico no es correcto</p>
+                    </div>
+                    <div class="form-grupo-input">
+                        <input type="password" id="password" name="password" placeholder="Contraseña">
+                        <img  class="icon-error" id="icono-password" src="images/icon-error.svg" alt="">
+                        <p id="mensaje-password" class="mensaje-error">*Campo de password no puede estar vacío</p>
+                    </div>
+
+                    <button type="submit"><strong>RECLAMA TU PRUEBA GRATUITA</strong></button>
+                    <p>Al hacer clic en el botón, usted acepta nuestros <a href="#">Términos y Servicios</a></p>
+            </form>
+        </div>
+        <script src="./script.js"></script>
+</body>
+</html>
