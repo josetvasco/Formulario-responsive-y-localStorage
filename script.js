@@ -91,4 +91,3 @@ let respuestasJson = localStorage.getItem("respuestas");
 let respuestas = JSON.parse(respuestasJson);
 
 console.log(respuestas);
-
